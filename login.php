@@ -4,14 +4,14 @@ $ip = $_SERVER ['REMOTE_ADDR'];
 session_start();
 if ($ip != '127.0.0.1') {
 	$db_servername = "localhost";
-	$db_username = "stjudes_admin";
-	$db_password = "Kappa25rs75p";
-	$db_dbname = "stjudes_portal";
+	$db_username = "";
+	$db_password = "";
+	$db_dbname = "";
 }else {
 	$db_servername = "localhost";
 	$db_username = "root";
 	$db_password = "";
-	$db_dbname = "stjudes_portal";
+	$db_dbname = "";
 }
 
 // Create connection
