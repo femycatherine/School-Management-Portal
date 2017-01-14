@@ -2,13 +2,13 @@
 			$ip = $_SERVER ["REMOTE_ADDR"];
 			if ($ip != "::1") {
 				$mysql_servername =  "localhost";
-				$mysql_username = "stjudes_admin";
-				$mysql_password = "Kappa25rs75p";
-				$mysql_dbname = "stjudes_portal";
+				$mysql_username = "";
+				$mysql_password = "";
+				$mysql_dbname = "";
 			}else {
 				$mysql_servername = "";
-				$mysql_username = "root";
-				$mysql_password = "femyani";
+				$mysql_username = "";
+				$mysql_password = "";
 				$mysql_dbname = "";
 			}
 			// Create connection

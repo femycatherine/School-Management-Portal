@@ -5,14 +5,14 @@ error_reporting(E_ALL & ~E_NOTICE);
 			$ip = $_SERVER ["REMOTE_ADDR"];
 			if ($ip != '127.0.0.1') {
 				$mysql_servername =  "localhost";
-				$mysql_username = "stjudes_admin";
-				$mysql_password = "Kappa25rs75p";
-				$mysql_dbname = "stjudes_portal";
+				$mysql_username = "";
+				$mysql_password = "";
+				$mysql_dbname = "";
 			}else {
 				$mysql_servername = "localhost";
 				$mysql_username = "root";
 				$mysql_password = "";
-				$mysql_dbname = "stjudes_portal";
+				$mysql_dbname = "";
 			}  
 			// Create connection
 			$conn = new mysqli($mysql_servername, $mysql_username, $mysql_password, $mysql_dbname);
